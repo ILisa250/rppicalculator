@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <title>RPPI CALCULATOR</title>
+    <!-- <style>
+      body {
+          background-image: url('article-house.jpg');
+          background-repeat: no-repeat;
+          background-size: cover; 
+          background-position: center center;
+          background-color: #f1f1f1;
+      }
+      </style> -->
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Icons CSS Files -->
+    <link href="../../RPPI/assets/icons/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../RPPI/assets/icons/bootstrap/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="../../RPPI/assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a
+          href="../../index.html"
+          class="national-bank-of-rwanda d-flex align-items-center"
+        >
+          <img
+            src="../../RPPI/assets/img/national-bank-of-rwanda.png"
+            alt="national-bank-of-rwanda-logo"
+          />
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+        <h1 class="header-name">RPPI CALCULATOR</h1>
+      </div>
+      <!-- End Logo - national-bank-of-rwanda -->
+
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../../index.html">
+            <i class="bi bi-house-door"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <!-- End Home Nav -->
+
+        <li class="nav-item">
+          <a href="../../RPPI/Others/about.html" class="nav-link">
+            <i class="bi bi-info-circle"></i><span>About</span>
+          </a>
+        </li>
+        <!-- End about Nav -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#strata-nav"
+            data-bs-toggle="collapse"
+            href="#">
+            <i class="bi bi-bar-chart"></i><span>Strata RPPIs</span>
+            <i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="strata-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a
+                href="#"
+                class="nav-link collapsed"
+                data-bs-target="#district-nav"
+                data-bs-toggle="collapse"
+              >
+                <i class="bi bi-list"></i><span>District</span>
+                <i class="bi bi-chevron-down ms-auto"></i>
+              </a>
+              <ul id="district-nav" class="nav-content collapse">
+                <li>
+                  <a href="../../RPPI/Strata_RPPIs/District/gasabo.html"><i class="bi bi-dot"></i><span>Gasabo</span></a>
+                </li>
+                <li>
+                  <a href="../../RPPI/Strata_RPPIs/District/kicukiro.html"><i class="bi bi-dot"></i><span>Kicukiro</span></a>
+                </li>
+                <li>
+                  <a href="../../RPPI/Strata_RPPIs/District/nyarugenge.html"><i class="bi bi-dot"></i><span>Nyarugenge</span></a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav-link collapsed"
+                data-bs-target="#property-nav"
+                data-bs-toggle="collapse"
+              >
+                <i class="bi bi-list"></i><span>Property Type</span>
+                <i class="bi bi-chevron-down ms-auto"></i>
+              </a>
+              <ul id="property-nav" class="nav-content collapse">
+                <li>
+                  <a href="../../RPPI/Strata_RPPIs/PropertyType/propertyhouse.html"
+                    ><i class="bi bi-dot"></i><span>Houses</span></a
+                  >
+                </li>
+                <li>
+                  <a href="../../RPPI/Strata_RPPIs/PropertyType/propertyapart.html"
+                    ><i class="bi bi-dot"></i
+                    ><span>Apartments</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <!-- End Strata RPPIs Nav -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#hedonicmodel-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-calculator"></i><span>Hedonic RPPIs</span>
+            <i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="hedonicmodel-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="../../RPPI/Hedonic_RPPIs/tdhm.html">
+                <i class="bi bi-list"></i><span>Time Dummy</span>
+              </a>
+            </li>
+            <!-- <li>
+              <a href="hedonicmodel-characteristics.html">
+                <i class="bi bi-list"></i><span>Characteristics</span>
+              </a>
+            </li> -->
+          </ul>
+        </li>
+        <!-- End Hedonic Model Nav -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#icons-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-download"></i><span>Download Data</span>
+            <i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="icons-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="data/house-for-sale.csv" download>
+                <i class="bi bi-download"></i><span>House for Sale</span>
+              </a>
+            </li>
+            <li>
+              <a href="data/house-for-rent.csv" download>
+                <i class="bi bi-download"></i><span>House for Rent</span>
+              </a>
+            </li>
+            <li>
+              <a href="data/apartment-for-sale.csv" download>
+                <i class="bi bi-download"></i><span>Apartment for Sale</span>
+              </a>
+            </li>
+            <li>
+              <a href="data/apartment-for-rent.csv" download>
+                <i class="bi bi-download"></i><span>Apartment for Rent</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- End download data -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#user-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-file-text"></i><span>User guide</span>
+            <i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="user-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a>
+                <i class="bi bi-file-text"></i><span>Getting Started</span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <i class="bi bi-file-text"></i
+                ><span>User Interface Overview</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End user guide -->
+      </ul>
+    </aside>
+    <!-- End Sidebar-->
+    <main id="main" class="main">
+      <div class="pagetitle">
+      </div>
+      <div class="main">
+        <div class="cards_prop">
+            <div class="card">
+                <div class="card-content">
+                  <div class="card-name">Total Houses</div>
+                    <div class="number">6680</div>
+                    <div class="card-name">Year 2022</div>
+                </div>
+                <div class="icon-box">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                  <div class="card-name">Total Apartments</div>
+                    <div class="number">52</div>
+                    <div class="card-name">Year 2022</div>
+                </div>
+                <div class="icon-box">
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="chartstdhm">
+            <div class="chartstdhm">
+                <h2>Time Dummy Hedonic Model</h2>
+                <div id="barChart1"></div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="copyright">
+        Copyright &copy;
+        <strong> <span>2023</span> </strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Developed by Data Science Team at the
+        <a href="https://www.bnr.rw/">
+          <strong> National Bank of Rwanda </strong>
+        </a>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Icons JS Files -->
+    <script src="../../RPPI/assets/icons/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../../RPPI/assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="../../RPPI/public/tdhm.js"></script>
+  </body>
+</html>
